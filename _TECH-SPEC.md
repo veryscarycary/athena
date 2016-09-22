@@ -17,13 +17,17 @@
 [TODO Sketch out your system architecture -- pretty much just what you’d sketch out on a whiteboard to explain things to yourselves while planning. If you’re unsure how to draw such diagrams -- there should be a box for each major component of the system. Key flows (requests/responses, data being moved and processed, etc) that tie those components together are represented by lines between boxes. Imagine diagramming how a restaurant handles an order. Note that there isn't one canonical way to draw these diagrams, don’t get too hung up on format.]
 
 [TODO use LucidChart or other stuff to make system diagrams. There should be a box for each major component of the system, and key flows that tie those components together are represented by lines between boxes]
-
-LucidArt Diagram - ![alt text]()
-
 [TODO sequence diagram of the overall flow]
 [TODO system diagram of the components and their relationships]
+
+LUCIDART Diagram - ![alt text](https://github.com/Wistful-Bison/athena/blob/master/Diagrams/Thesis%20Architecture%20-%20Page%201.png)
+
+
 [TODO E-R diagram or other description of the schema]
+SCHEMA DIAGRAM - ![alt text](https://github.com/Wistful-Bison/athena/blob/master/Diagrams/Screen%20Shot%202016-09-22%20at%203.14.40%20PM.png)
+
 [TODO API spec]
+API SPEC - ![alt text](https://github.com/Wistful-Bison/athena/blob/master/Diagrams/API%20Spec.jpg)
 
 
 ## Tools and technologies we plan to use ##
