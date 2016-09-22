@@ -1,0 +1,51 @@
+body {
+  background: lightgrey;
+  font-family: helvetica;
+  color: black;
+}
+h1 {
+  padding:0;
+  margin:0;
+  font-size:48;
+  color:steelblue;
+}
+h3, h4, h5{
+  font-style: italic;
+  color: slategrey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size:36;
+  padding-top:5px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.field {
+  outline-style: solid;
+  outline-color: midnightblue;
+  padding: 10px;
+}
+.products {
+  font-size: 24;
+  font-weight: bold;
+  font-style: italic;
+  color: slategrey;
+}
+.useButton {
+  float:right;
+  font-weight: bold;
+  font-size: 24;
+  border-width: 5px;
+  background: white;
+}
