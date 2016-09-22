@@ -17,6 +17,9 @@
 [TODO Sketch out your system architecture -- pretty much just what you’d sketch out on a whiteboard to explain things to yourselves while planning. If you’re unsure how to draw such diagrams -- there should be a box for each major component of the system. Key flows (requests/responses, data being moved and processed, etc) that tie those components together are represented by lines between boxes. Imagine diagramming how a restaurant handles an order. Note that there isn't one canonical way to draw these diagrams, don’t get too hung up on format.]
 
 [TODO use LucidChart or other stuff to make system diagrams. There should be a box for each major component of the system, and key flows that tie those components together are represented by lines between boxes]
+
+LucidArt Diagram - ![alt text]()
+
 [TODO sequence diagram of the overall flow]
 [TODO system diagram of the components and their relationships]
 [TODO E-R diagram or other description of the schema]
