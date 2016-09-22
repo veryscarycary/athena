@@ -11,6 +11,7 @@
 ## Mockups ##
 [TODO draw out a simple skeleton of what your UI might look like]
 
+KB Mockup - ![alt text](https://github.com/Wistful-Bison/athena/blob/master/mockupFiles/kbArticle.html)
 
 
 ## Architecture ##
@@ -33,12 +34,41 @@ API SPEC - ![alt text](https://github.com/Wistful-Bison/athena/blob/master/Diagr
 ## Tools and technologies we plan to use ##
 [TODO list all key frameworks and libraries]
 
+Front-end
+------------
+React
+Redux
+
+Back-end
+---------
+Node
+Express
+Sequelize
+PostgresQL
+Docker
+
 
 ## What will be cool / hard / done from scratch? ##
 [TODO what things do you plan to do, technically speaking, that would at least mildly impress a fellow nerd? stuff that goes beyond run-of-the-mill usage of the usual tools.]
 
+-Docker
+-Service-oriented Architecture
+-Ticketing System
+-Relational data
+-Oauth
+
 ## Technical investigations done / to do ##
 [TODO define any time-boxed investigation / prototyping that must be done before the team can safely proceed, and/or link to the results of such investigations that you did]
 
+-Relational schema and API endpoints
+-Redux research
+-Testing
+-Docker
+-Knowledge Base Implementations(Knowledge-centered Support)
+
 ## Ownership ##
 [TODO for each major system area / work area, please list who is the single owner (the  “go-to person”) for that area. Identifying “go to” ownership of areas at project start is helpful later, in the Outcomes phase of Hack Reactor, when you will need to convince hiring managers that you really did and really can do the things you list on your resume. ]
+
+Brad - Database, Server
+Amelia - Front-end
+Cary - Front-end
