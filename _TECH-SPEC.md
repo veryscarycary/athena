@@ -11,7 +11,7 @@
 ## Mockups ##
 [TODO draw out a simple skeleton of what your UI might look like]
 
-KB Mockup - ![alt text](https://github.com/Wistful-Bison/athena/blob/master/mockupFiles/kbArticle.html)
+[KB Mockup](https://github.com/Wistful-Bison/athena/blob/master/mockupFiles/kbArticle.html)
 
 
 ## Architecture ##
