@@ -6,8 +6,13 @@
 ## App overview ## 
 [TODO briefly explain the app. Imagine you have literally 60 seconds to pitch your app to an investor. That’s how much verbiage should go here.]
 
+ The product is a service optimization solution for capturing actionable knowledge from customer interactions. It provides a ticketing system to resolve customer pain-points and identify product shortcomings, a knowledge base platform to generate relevant, reusable documentation, and an administrative dashboard that presents distilled, dynamic data to inform targeted solutions.
+
 ## Mockups ##
 [TODO draw out a simple skeleton of what your UI might look like]
+
+
+
 ## Architecture ##
 [TODO Sketch out your system architecture -- pretty much just what you’d sketch out on a whiteboard to explain things to yourselves while planning. If you’re unsure how to draw such diagrams -- there should be a box for each major component of the system. Key flows (requests/responses, data being moved and processed, etc) that tie those components together are represented by lines between boxes. Imagine diagramming how a restaurant handles an order. Note that there isn't one canonical way to draw these diagrams, don’t get too hung up on format.]
 
@@ -16,8 +21,12 @@
 [TODO system diagram of the components and their relationships]
 [TODO E-R diagram or other description of the schema]
 [TODO API spec]
+
+
 ## Tools and technologies we plan to use ##
 [TODO list all key frameworks and libraries]
+
+
 ## What will be cool / hard / done from scratch? ##
 [TODO what things do you plan to do, technically speaking, that would at least mildly impress a fellow nerd? stuff that goes beyond run-of-the-mill usage of the usual tools.]
 
