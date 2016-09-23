@@ -1,19 +1,7 @@
 {
   "name": "wistful-bison",
-  "version": "1.0.0",
-  "description": "Application Layer for Athena",
-  "main": "./server/index.js",
   "scripts": {
-    "start": "concurrently 'nodemon ../user/server/index.js' 'nodemon ../app/server/index.js $PORT'"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
-  "license": "",
-  "bugs": {
-    "url": ""
+    "start": "concurrently --kill-others 'nodemon ../user/server/index.js' 'nodemon ../app/server/index.js $PORT'"
   },
   "devDependencies": {
     "concurrently": "^2.2.0"

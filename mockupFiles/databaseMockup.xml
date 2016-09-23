@@ -203,16 +203,28 @@
 <part>id</part>
 </key>
 </table>
-<table x="740" y="271" name="Products">
+<table x="724" y="180" name="Products">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
+<row name="category" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default><relation table="Product Categories" row="id" />
+</row>
+<row name="type" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default><relation table="Product Types" row="id" />
+</row>
 <row name="name" null="1" autoincrement="0">
 <datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <row name="description" null="1" autoincrement="0">
 <datatype>VARCHAR(50)</datatype>
 <default>NULL</default></row>
+<row name="serviceLevel" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default><relation table="Service Levels" row="id" />
+</row>
 <row name="relatedArticles" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="Article-Product Join" row="id" />
@@ -246,7 +258,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="464" y="266" name="Article Edits">
+<table x="460" y="279" name="Article Edits">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -281,7 +293,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="702" y="133" name="Article-Product Join">
+<table x="454" y="166" name="Article-Product Join">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -297,7 +309,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="1090" y="352" name="Product-Ticket Join">
+<table x="1177" y="414" name="Product-Ticket Join">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -313,7 +325,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="689" y="31" name="Article-Ticket Join">
+<table x="462" y="45" name="Article-Ticket Join">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -354,7 +366,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="919" y="451" name="Product-User Join">
+<table x="1104" y="57" name="Product-User Join">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -467,6 +479,48 @@
 <default>NULL</default></row>
 <row name="articleDelete" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="1790" y="0" name="Service Levels">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="description" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="1728" y="130" name="Product Types">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="description" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="1516" y="34" name="Product Categories">
+<row name="id" null="1" autoincrement="1">
+<datatype>INTEGER</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
+<default>NULL</default></row>
+<row name="description" null="1" autoincrement="0">
+<datatype>VARCHAR</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
