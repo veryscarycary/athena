@@ -1,5 +1,6 @@
 {
   "name": "wistful-bison",
+  "description": "Notes, diagrams, and thoughts. Non-code repo.",
   "scripts": {
     "start": "concurrently --kill-others 'nodemon ../user/server/index.js' 'nodemon ../app/server/index.js $PORT'"
   },

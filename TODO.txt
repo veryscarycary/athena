@@ -1,0 +1,7 @@
+- Athentication on User service
+- Proper application-layer routing to user service
+- Sessions on application-layer
+- access passwords for each server and database
+-- password pages to store hashed access passes, with npm command to setup or change a password
+-- sessions for servers to maintain connnection with repeat auth
+- refactor main databases to postgres
