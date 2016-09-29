@@ -69,6 +69,6 @@ Docker
 ## Ownership ##
 [TODO for each major system area / work area, please list who is the single owner (the  “go-to person”) for that area. Identifying “go to” ownership of areas at project start is helpful later, in the Outcomes phase of Hack Reactor, when you will need to convince hiring managers that you really did and really can do the things you list on your resume. ]
 
-Brad - Database, Server
-Amelia - Front-end
-Cary - Front-end
+Brad - Backend
+Amelia - Frontend
+Cary - Frontend
