@@ -2,7 +2,7 @@
   "name": "wistful-bison",
   "description": "Notes, diagrams, and thoughts. Non-code repo.",
   "scripts": {
-    "start": "concurrently --kill-others 'nodemon ../kb/server/index.js' 'nodemon ../ticket/server/index.js' 'nodemon ../kbSearch/server/index.js'"
+    "start": "concurrently --kill-others 'nodemon ../kb/server/index.js' 'nodemon ../ticket/server/index.js' 'nodemon ../user/server/index.js' 'nodemon ../kbSearch/server/index.js'"
   },
   "devDependencies": {
     "concurrently": "^2.2.0"
