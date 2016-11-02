@@ -1,6 +1,6 @@
 # Athena
 
-> Pithy project description
+Smart support platform that focuses on providing high quality solutions, reducing customer pain points, and delivering relevant knowledge to decision makers.
 
 ## Team
 
@@ -11,41 +11,96 @@
 ## Table of Contents
 
 1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+2. [Requirements](#requirements)
     1. [Installing Dependencies](#installing-dependencies)
     1. [Tasks](#tasks)
-1. [Team](#team)
-1. [Contributing](#contributing)
-
-## Usage
-
-> Some usage instructions
+3. [Team](#team)
+4. [Contributing](#contributing)
 
 ## Requirements
 
-- Node 0.10.x
-- Redis 2.6.x
-- Postgresql 9.1.x
-- etc
-- etc
+    Node 6.2.2 or similar
+    MongoDB
+    PostgreSQL
+    ElasticSearch-2.4.1
+    Webpack
+    ...
+    
+    Refer to each repo's package.json for libary dependencies
 
-## Development
+## Usage
 
-### Installing Dependencies
+In order to run this application, you will first need to clone down and install the dependencies from each respective service. The full instructions are listed below:
+  
+Download:
+  
+  In Terminal, from within desired parent directory:
+  
+      git clone https://github.com/Wistful-Bison/athena.git athena
+      git clone https://github.com/Wistful-Bison/athenaApp.git athenaApp
+      git clone https://github.com/Wistful-Bison/athenaUser.git user
+      git clone https://github.com/Wistful-Bison/athenaTicket.git ticket
+      git clone https://github.com/Wistful-Bison/athenaKb.git kb
+      git clone https://github.com/Wistful-Bison/athenaKbSearch.git kbSearch
 
-From within the root directory:
+## Installing Dependencies
 
-```sh
-sudo npm install -g bower
-npm install
-bower install
-```
+      brew install node
+
+  In Terminal, from within the root directory:
+
+      cd athena
+      npm install
+      
+      cd ..
+      cd athenaApp
+      npm install
+      
+      cd ..
+      cd user
+      npm install
+      
+      cd ..
+      cd ticket
+      npm install
+      
+      cd ..
+      cd kb
+      npm install
+      
+      cd ..
+      cd kbSearch
+      npm install
+
+  To Run:
+  
+     Start databases:
+    
+         In Terminal, mongod
+         Start postgreSQL server
+      
+     Start elasticSearch:
+         
+         In Terminal, cd <elasticsearch_directory>
+         In Terminal, bin/elasticsearch
+     
+     Start services:
+     
+         In Terminal in parent directory, cd athena
+         In Terminal, npm start   // runs nodemon for user, ticket, kb, and kbSearch services
+         
+     Start app:
+     
+         In Terminal in parent directory, cd athenaApp
+         In Terminal, webpack --watch
+         In Terminal, npm start
+         
+     Visit http://localhost:3000 and Voila!
+
 
 ### Roadmap
 
 View the project roadmap [here](LINK_TO_PROJECT_ISSUES)
-
 
 ## Contributing
 
