@@ -105,3 +105,5 @@ View the project roadmap [here](LINK_TO_PROJECT_ISSUES)
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+![alt tag](http://www.carymeskell.com/portfolio/athenaPortfolio.jpg)
