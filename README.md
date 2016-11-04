@@ -32,8 +32,8 @@ This application was built with service-oriented architecture in mind. Therefore
 2. [Team](#team)
 3. [Contributing](#contributing)
 4. [Requirements](#requirements)
-5. [Usage](#Usage)
-6. [Requirements](#requirements)
+5. [Requirements](#requirements)
+6. [Usage](#usage)
     1. [Installing Dependencies](#installing-dependencies)
     2. [To Run](#to-run)
 
@@ -92,30 +92,30 @@ Download:
       cd kbSearch
       npm install
 
-  To Run:
+## To Run
   
-     Start databases:
+ Start databases:
     
          In Terminal, mongod
          Start postgreSQL server
       
-     Start elasticSearch:
+ Start elasticSearch:
          
          In Terminal, cd <elasticsearch_directory>
          In Terminal, bin/elasticsearch
      
-     Start services:
+ Start services:
      
          In Terminal in parent directory, cd athena
          In Terminal, npm start   // runs nodemon for user, ticket, kb, and kbSearch services
          
-     Start app:
+ Start app:
      
          In Terminal in parent directory, cd athenaApp
          In Terminal, webpack --watch
          In Terminal, npm start
          
-     Visit http://localhost:3000 and Voila!
+ Visit http://localhost:3000 and Voila!
 
 
 ![alt tag](http://www.carymeskell.com/portfolio/athenaPortfolio.jpg)
