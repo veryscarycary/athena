@@ -19,15 +19,23 @@ This application was built with service-oriented architecture in mind. Therefore
   - __Product Owner__: Bradford Melluish
   - __Scrum Master__: Cary Meskell
   - __Development Team Members__: Amelia Brown
+  
+## Contributing
+
+  - Front-end: Amelia Brown
+  - Front-end: Cary Meskell
+  - Back-end: Bradford Melluish
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-2. [Requirements](#requirements)
+1. [Project Files](#project-files)
+2. [Team](#team)
+3. [Contributing](#contributing)
+4. [Requirements](#requirements)
+5. [Usage](#Usage)
+6. [Requirements](#requirements)
     1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
-3. [Team](#team)
-4. [Contributing](#contributing)
+    2. [To Run](#to-run)
 
 ## Requirements
 
