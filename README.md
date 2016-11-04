@@ -2,6 +2,18 @@
 
 Smart support platform that focuses on providing high quality solutions, reducing customer pain points, and delivering relevant knowledge to decision makers.
 
+## Project Files
+
+This application was built with service-oriented architecture in mind. Therefore, this project contains services that are spread over a number of github repos(one per service). These necessary project files can be found by visiting the following links:
+
+    https://github.com/Wistful-Bison/athena (this repo!)
+    https://github.com/Wistful-Bison/athenaApp
+    https://github.com/Wistful-Bison/athenaUser
+    https://github.com/Wistful-Bison/athenaTicket
+    https://github.com/Wistful-Bison/athenaKb
+    https://github.com/Wistful-Bison/athenaKbSearch
+
+
 ## Team
 
   - __Product Owner__: Bradford Melluish
@@ -31,7 +43,7 @@ Smart support platform that focuses on providing high quality solutions, reducin
 ## Usage
 
 In order to run this application, you will first need to clone down and install the dependencies from each respective service. The full instructions are listed below:
-  
+
 Download:
   
   In Terminal, from within desired parent directory:
