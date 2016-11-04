@@ -2,6 +2,16 @@
 
 Smart support platform that focuses on providing high quality solutions, reducing customer pain points, and delivering relevant knowledge to decision makers.
 
+## Table of Contents
+
+1. [Project Files](#project-files)
+2. [Team](#team)
+3. [Contributing](#contributing)
+4. [Requirements](#requirements)
+5. [Usage](#usage)
+    1. [Installing Dependencies](#installing-dependencies)
+    2. [To Run](#to-run)
+
 ## Project Files
 
 This application was built with service-oriented architecture in mind. Therefore, this project contains services that are spread over a number of github repos(one per service). These necessary project files can be found by visiting the following links:
@@ -25,17 +35,6 @@ This application was built with service-oriented architecture in mind. Therefore
   - Front-end: Amelia Brown
   - Front-end: Cary Meskell
   - Back-end: Bradford Melluish
-
-## Table of Contents
-
-1. [Project Files](#project-files)
-2. [Team](#team)
-3. [Contributing](#contributing)
-4. [Requirements](#requirements)
-5. [Requirements](#requirements)
-6. [Usage](#usage)
-    1. [Installing Dependencies](#installing-dependencies)
-    2. [To Run](#to-run)
 
 ## Requirements
 
