@@ -117,4 +117,4 @@ Download:
  Visit http://localhost:3000 and Voila!
 
 
-![alt tag](http://www.carymeskell.com/portfolio/athenaPortfolio.jpg)
+![alt tag](http://www.carymeskell.com/img/portfolio/AthenaModal.jpg)
