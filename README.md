@@ -16,12 +16,12 @@ Smart support platform that focuses on providing high quality solutions, reducin
 
 This application was built with service-oriented architecture in mind. Therefore, this project contains services that are spread over a number of github repos(one per service). These necessary project files can be found by visiting the following links:
 
-   https://github.com/Wistful-Bison/athena  (this repo!)
-   https://github.com/Wistful-Bison/athenaApp
-   https://github.com/Wistful-Bison/athenaUser
-   https://github.com/Wistful-Bison/athenaTicket
-   https://github.com/Wistful-Bison/athenaKb
-   https://github.com/Wistful-Bison/athenaKbSearch
+   - https://github.com/Wistful-Bison/athena  (this repo!)
+   - https://github.com/Wistful-Bison/athenaApp
+   - https://github.com/Wistful-Bison/athenaUser
+   - https://github.com/Wistful-Bison/athenaTicket
+   - https://github.com/Wistful-Bison/athenaKb
+   - https://github.com/Wistful-Bison/athenaKbSearch
 
 
 ## Team
