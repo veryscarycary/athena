@@ -1,0 +1,101 @@
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:7.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - my_network
+
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my_network
+
+  user:
+    container_name: user
+    build:
+      context: https://github.com/veryscarycary/athenaUser.git
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+      - mongodb
+    networks:
+      - my_network
+    environment:
+      - NODE_ENV=production
+
+  ticket:
+    container_name: ticket
+    build:
+      context: https://github.com/veryscarycary/athenaTicket.git  # Use the GitHub repo
+    ports:
+      - "3002:3002"
+    depends_on:
+      - postgres
+      - mongodb
+    networks:
+      - my_network
+    environment:
+      - NODE_ENV=production
+      # No Dockerfile needed
+
+  kb:
+    container_name: kb
+    build:
+      context: https://github.com/veryscarycary/athenaKb.git
+    ports:
+      - "3003:3003"
+    depends_on:
+      - postgres
+      - mongodb
+    networks:
+      - my_network
+    environment:
+      - NODE_ENV=production
+
+  kb-search:
+    container_name: kb-search
+    build:
+      context: https://github.com/veryscarycary/athenaKbSearch.git
+    ports:
+      - "3004:3004"
+    depends_on:
+      - postgres
+      - mongodb
+    networks:
+      - my_network
+    environment:
+      - NODE_ENV=production
+
+  athena-app:
+    container_name: athena-app
+    build:
+      context: https://github.com/veryscarycary/athenaApp.git
+    ports:
+      - "3000:3000"
+    depends_on:
+      - user
+      - ticket
+      - kb
+      - kb-search
+    networks:
+      - my_network
+    environment:
+      - NODE_ENV=production
+
+volumes:
+  mongodb_data:
+  postgres_data:
+
+networks:
+  my_network:
+    driver: bridge
