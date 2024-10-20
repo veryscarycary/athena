@@ -39,7 +39,7 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=user
-      - DOCKERCOMPOSE=true
+      - DOCKER_COMPOSE=true
 
   ticket:
     container_name: ticket
@@ -102,6 +102,8 @@ services:
       - kb-search
     networks:
       - my_network
+    environment:
+      - DOCKER_COMPOSE=true
 
 volumes:
   mongodb_data:
