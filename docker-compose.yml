@@ -39,6 +39,7 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=user
+      - DOCKERCOMPOSE=true
 
   ticket:
     container_name: ticket
