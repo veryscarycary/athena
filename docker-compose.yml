@@ -12,12 +12,18 @@ services:
 
   postgres:
     container_name: postgres
-    image: postgres:latest
+    image: postgres:10
     restart: always
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./initScripts:/docker-entrypoint-initdb.d # Mount your initialization scripts
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U your_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     networks:
       - my_network
     environment:
@@ -31,8 +37,8 @@ services:
     ports:
       - "3001:3001"
     depends_on:
-      - postgres
-      - mongodb
+      postgres:
+        condition: service_healthy
     networks:
       - my_network
     environment:
@@ -48,8 +54,8 @@ services:
     ports:
       - "3002:3002"
     depends_on:
-      - postgres
-      - mongodb
+      postgres:
+        condition: service_healthy
     networks:
       - my_network
     environment:
@@ -65,8 +71,8 @@ services:
     ports:
       - "3003:3003"
     depends_on:
-      - postgres
-      - mongodb
+      postgres:
+        condition: service_healthy
     networks:
       - my_network
     environment:
@@ -82,8 +88,8 @@ services:
     ports:
       - "3004:3004"
     depends_on:
-      - postgres
-      - mongodb
+      postgres:
+        condition: service_healthy
     networks:
       - my_network
     environment:
