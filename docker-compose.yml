@@ -31,16 +31,24 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.2
     container_name: elasticsearch
-    environment:
-      - discovery.type=single-node
-      - xpack.security.enabled=false
+    image: elasticsearch:2.4.1
     ports:
       - "9200:9200"
       - "9300:9300"
     volumes:
       - es_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200 || exit 1"]
+      interval: 15s      # Time between checks
+      timeout: 10s       # Time to wait for the healthcheck to complete
+      retries: 5         # Number of retries before considering it unhealthy
+      start_period: 20s  # Time to wait before starting healthchecks
+    networks:
+      - my_network
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
 
   user:
     container_name: user
@@ -101,6 +109,8 @@ services:
       - "3004:3004"
     depends_on:
       postgres:
+        condition: service_healthy
+      elasticsearch:
         condition: service_healthy
     networks:
       - my_network

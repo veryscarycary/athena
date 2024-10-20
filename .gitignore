@@ -28,3 +28,6 @@ dist/
 node_modules/
 bower_components/
 Contact GitHub API Training Shop Blog About
+
+# env
+.env
