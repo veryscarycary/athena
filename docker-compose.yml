@@ -30,6 +30,18 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.10.2
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+
   user:
     container_name: user
     build:
@@ -116,6 +128,8 @@ services:
 volumes:
   mongodb_data:
   postgres_data:
+  es_data:
+    driver: local
 
 networks:
   my_network:
