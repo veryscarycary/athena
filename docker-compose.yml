@@ -104,7 +104,7 @@ services:
   kb-search:
     container_name: kb-search
     build:
-      context: https://github.com/veryscarycary/athenaKbSearch.git#original-elasticsearch
+      context: https://github.com/veryscarycary/athenaKbSearch.git
     ports:
       - "3004:3004"
     depends_on:
