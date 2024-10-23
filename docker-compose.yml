@@ -2,7 +2,7 @@ services:
   mongodb:
     container_name: mongodb
     image: mongo:4.0
-    restart: always
+    restart: unless-stopped
     ports:
       - "27017:27017"
     volumes:
@@ -13,7 +13,7 @@ services:
   postgres:
     container_name: postgres
     image: postgres:10
-    restart: always
+    restart: unless-stopped
     ports:
       - "5432:5432"
     volumes:
@@ -33,6 +33,7 @@ services:
   elasticsearch:
     container_name: elasticsearch
     image: elasticsearch:2.4.1
+    restart: unless-stopped
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -54,6 +55,7 @@ services:
     container_name: user
     build:
       context: https://github.com/veryscarycary/athenaUser.git
+    restart: unless-stopped
     ports:
       - "3001:3001"
     depends_on:
@@ -71,6 +73,7 @@ services:
     container_name: ticket
     build:
       context: https://github.com/veryscarycary/athenaTicket.git  # Use the GitHub repo
+    restart: unless-stopped
     ports:
       - "3002:3002"
     depends_on:
@@ -88,6 +91,7 @@ services:
     container_name: kb
     build:
       context: https://github.com/veryscarycary/athenaKb.git
+    restart: unless-stopped
     ports:
       - "3003:3003"
     depends_on:
@@ -105,6 +109,7 @@ services:
     container_name: kb-search
     build:
       context: https://github.com/veryscarycary/athenaKbSearch.git
+    restart: unless-stopped
     ports:
       - "3004:3004"
     depends_on:
@@ -123,6 +128,7 @@ services:
     container_name: athena-app
     build:
       context: https://github.com/veryscarycary/athenaApp.git
+    restart: unless-stopped
     ports:
       - "3000:3000"
     depends_on:
